@@ -1,0 +1,201 @@
+/* Reset de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f2e8;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f7f2e8;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #666;
+}
+
+/* Botão de contato */
+.button-contact {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button-contact:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Seção de introdução */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 40px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+/* Botões de chamada para ação */
+.button-container {
+    margin-top: 30px;
+}
+
+.button {
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin: 0 15px;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button-gray {
+    background-color: #ccc;
+    color: #333;
+}
+
+.button-gray:hover {
+    background-color: #999;
+    transform: scale(1.05);
+}
+
+/* Cartões de pratos da gastronomia capixaba */
+.prato-card {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.prato-card div {
+    width: 30%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.prato-card div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.prato-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 3px solid #ddd;
+}
+
+.prato-card h4 {
+    font-size: 1.4rem;
+    color: #333;
+    padding: 15px;
+    background-color: #f7f7f7;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Estilo para os diferentes tipos de pratos */
+.prato-card .moqueca {
+    background-color: #fff;
+}
+
+.prato-card .torta {
+    background-color: #fff;
+}
+
+.prato-card .espetinho {
+    background-color: #fff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .prato-card {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .prato-card div {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .button {
+        font-size: 1.1rem;
+        padding: 10px 20px;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+}
